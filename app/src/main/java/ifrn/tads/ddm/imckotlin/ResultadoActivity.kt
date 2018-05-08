@@ -24,7 +24,7 @@ class ResultadoActivity : AppCompatActivity() {
         et_situacao.setText(situacao)
         et_feedback.setText(feedback)
 
-        btn_voltar.setOnClickListener { voltar() }
+        btn_voltar.setOnClickListener { finish() }
     }
 
     private fun situacaoIMC(imc: Double) {
@@ -50,10 +50,6 @@ class ResultadoActivity : AppCompatActivity() {
             situacao = "Obesidade Grau 3"
             feedback = "Refluxo, dificuldade para se mover, escaras, diabetes, infarto, AVC"
         }
-    }
-
-    private fun voltar() {
-        finish()
     }
 
 }
